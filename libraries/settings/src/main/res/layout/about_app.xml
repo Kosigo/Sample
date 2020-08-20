@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Widget.MyTheme.TextViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_about_app" />
+
+
+    <LinearLayout
+        android:id="@+id/click_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackground"
+        style="@style/PaddingPreference">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/text_feedback"
+            android:textAppearance="?textAppearanceSubtitle1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/text_description_feedback"
+            android:textAppearance="?textAppearanceCaption" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PaddingPreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/text_version_app"
+            android:textAppearance="?textAppearanceSubtitle1" />
+
+        <TextView
+            android:id="@+id/tv_app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/text_version"
+            android:textAppearance="?textAppearanceCaption" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/dividerHorizontal" />
+
+</LinearLayout>

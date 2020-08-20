@@ -1,0 +1,10 @@
+<resources >
+    <string name="app_name">Chibbis</string>
+
+    <!--Bottom menu-->
+    <string name="restaurants">Рестораны</string>
+    <string name="settings">Настройки</string>
+    <string name="bestsellers">Хиты продаж</string>
+    <string name="reviews">Отзывы</string>
+
+</resources>

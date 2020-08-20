@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bestsellers_graph"
+    android:label="bestsellers_graph"
+    app:startDestination="@id/bestsellersFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/bestsellersFragment"
+        android:name="com.kosigo.showcase.library.bestsellers.presentation.list.BestsellersFragment"
+        android:label="BestsellersFragment"
+        tools:layout="@layout/fragment_product_list">
+        <action
+            android:id="@+id/action_listFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.kosigo.showcase.library.bestsellers.presentation.item.ProductItemFragment"
+        android:label="ProductItemFragment"
+        tools:layout="@layout/fragment_product_info" />
+</navigation>

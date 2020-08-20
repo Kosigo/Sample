@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/restaurants_graph"
+    android:label="restaurants_graph"
+    app:startDestination="@id/restaurantsFragment"
+    tools:ignore="UnusedNavigation">
+
+
+    <fragment
+        android:id="@+id/restaurantsFragment"
+        android:name="com.kosigo.showcase.library.restaurants.presentation.list.RestaurantsFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.kosigo.showcase.library.restaurants.presentation.item.ItemFragment"
+        android:label="ItemFragment"
+        tools:layout="@layout/fragment_info"/>
+</navigation>
